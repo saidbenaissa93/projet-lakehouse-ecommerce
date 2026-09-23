@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_client
+    columns:
+      - name: customer_unique_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_produit
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_ventes
+    columns:
+      - name: order_id
+        tests:
+          - not_null

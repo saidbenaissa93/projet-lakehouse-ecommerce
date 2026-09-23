@@ -1,0 +1,33 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Data (fichiers bruts, trop volumineux pour Git)
+data/
+*.zip
+
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfvars
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+
+# dbt
+lakehouse_dbt/target/
+lakehouse_dbt/dbt_packages/
+lakehouse_dbt/logs/
+lakehouse_dbt/.user.yml
+
+# Power BI (fichier volumineux, souvent exclu ou géré à part)
+*.pbix
+
+# Kaggle / secrets
+.kaggle/
+kaggle.json
+
+# Divers
+.DS_Store
+logs/
